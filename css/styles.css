@@ -73,7 +73,7 @@ p {
 }
 
 .header {
-
+display: inline-flex;
   border: 1px solid #ececec;
 }
 /* Логотип */
@@ -119,8 +119,10 @@ p {
 }
 
 .contacts-header-list {
-  display: flex;
+  display:flex;
+
   margin-left: auto;
+
 }
 .nav-item {
   margin-right: 0;
@@ -136,6 +138,7 @@ p {
   bottom: 0;
   left: 0;
   border-radius: 2px;
+  
 }
 .contact-time:not(:last-child) {
   margin-right: 40px;
@@ -158,7 +161,8 @@ p {
   color: var(--secondary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  display: flex;
+  align-items:center;
+  justify-content: center;
 }
 
 /* Секція головна */
@@ -229,13 +233,7 @@ button {
   line-height: 1.17;
   text-align: center;
 }
-.mobile {
-  fill: var(--secondary-text-color);
-}
-.mobile:hover,
-.mobile:focus {
-  fill: var(--accent-color);
-}
+
 .adv-title {
   font-size: 14px;
   text-transform: uppercase;
@@ -511,6 +509,7 @@ button {
   display: flex;
   list-style: none;
   margin-bottom: 25px;
+  padding-top: 10px;
   align-items: inherit;
 }
 .fotlist111 {
@@ -526,7 +525,7 @@ button {
 
 .circ {
   fill: var(--white-text-color);
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,10 +579,10 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.contact-time:hover,
-.contact-time:focus {
-  color: var(--accent-color);
-  fill: gray;
+.social-link:hover,
+.social-link:focus{
+  background-color: var(--accent-color);
+  fill:var(--white-text-color);
 }
 /*.modal{
   width: 100%;
