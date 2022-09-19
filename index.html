@@ -54,7 +54,18 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-baton " type="button">Замовити послугу</button>
+        <button data-modal-open class="hero-baton " type="button">Замовити послугу</button>
+        <div data-modal class="modal is-hidden">
+          <div class="modal-box">
+            <button data-modal-close class="closebtn" type="button">
+               <svg class="icon13" width="30px" height="30px">
+                <use href="images/close.svg"></use>
+               </svg>
+              </button>
+            
+          </div>
+        </div>
+        </div>
         </div>
       </section>
       <section class="advantages">
@@ -106,13 +117,18 @@
         <h2 class="directions section-title">Чим ми займаємося</h2>
         <ul class="direction-list list">
           <li class="direction-item">
-            <img src="./images/image2.jpg" alt="компьютер" width="370" height="294" />
+           <div class="direct-img"> <img class="img" src="./images/image2.jpg" alt="компьютер" width="370" height="294" />
+            <p class="desctop">Десктопні додатки</p></div>
           </li>
           <li class="direction-item">
-            <img src="./images/image3.jpg" alt=" мобільниq телефон" width="370" height="294" />
+            <div class="direct-img">
+            <img class="img" src="./images/image3.jpg" alt=" мобільниq телефон" width="370" height="294" />
+            <p class="desctop">Мобільні додатки</p></div>
           </li>
           <li class="direction-item" >
-            <img src="./images/image 4.jpg" alt="планшет" width="370" height="294" />
+            <div class="direct-img">
+            <img class="img" src="./images/image 4.jpg" alt="планшет" width="370" height="294" />
+            <p class="desctop">Дизайнерські рішення</p></div>
           </li>
         </ul>
       </div>
@@ -412,5 +428,6 @@
      </div>
     
     </footer>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
