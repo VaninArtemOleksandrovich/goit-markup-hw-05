@@ -1,4 +1,5 @@
 /* Загальні стилі */
+/*  Загальні стилі */
 
 :root {
   --primary-text-color: #212121;
@@ -72,8 +73,7 @@ p {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+
   border: 1px solid #ececec;
 }
 /* Логотип */
@@ -84,6 +84,8 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .logo:visited {
@@ -95,9 +97,13 @@ p {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+  position:relative;
+  padding-top: 32px;
+    padding-bottom: 32px;
 }
 .main-nav {
   align-items: center;
+  position: relative;
 }
 .just-cont {
   display: flex;
@@ -109,6 +115,7 @@ p {
   box-sizing: border-box;
   padding-right: 0px;
   padding-left: 0px;
+  position: relative;
 }
 
 .contacts-header-list {
@@ -119,7 +126,17 @@ p {
   margin-right: 0;
   margin-left: 50px;
 }
-
+.pseudo-element::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
 .contact-time:not(:last-child) {
   margin-right: 40px;
 }
@@ -146,11 +163,19 @@ p {
 
 /* Секція головна */
 .hero {
-  background-color: var(--black-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/herocard.jpg);
-  background-repeat: no-repeat;
-  text-align: center;
+text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;
+margin: 0 auto;
+max-width: 1600px;
+min-height: 600px;
+background-color: var(--black-background-color);
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/bcg-hero-img.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover
+ 
 }
 button {
   cursor: pointer;
@@ -559,4 +584,31 @@ button {
 .contact-time:focus {
   color: var(--accent-color);
   fill: gray;
+}
+/*.modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-box{
+  max-width: 528px;
+  width: 100%;
+  height: 100%;
+  min-height: 581px;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: var(--white-text-color);
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  position: relative;
+}
+.closebtn{
+  background-color: #f5f4fa;
+
 }
