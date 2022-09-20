@@ -74,7 +74,6 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
-
 }
 /* Логотип */
 .logo {
@@ -208,13 +207,11 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
- 
   align-items: center;
   text-align: center;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
-
 }
 
 /* Секція переваги */
@@ -501,14 +498,15 @@ button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
-.description{color: var(--primary-text-color);
+.description {
+  color: var(--primary-text-color);
   padding-top: 0px;
   padding-left: 0px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 100 px;
-border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
@@ -523,15 +521,11 @@ border-right: 1px solid #eeeeee;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-    
-  
 }
 .project-time {
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-
 }
 
 .project-list {
@@ -540,23 +534,20 @@ border-right: 1px solid #eeeeee;
 }
 .project-description {
   color: var(--secondary-text-color);
-margin-left: 20px;
+  margin-left: 20px;
   font-size: 16px;
   line-height: 1.88;
- 
-   
 }
 
 .cocialul1 {
   display: flex;
   list-style: none;
-  
+
   padding-top: 10px;
   align-items: inherit;
 }
 .fotlist111 {
   display: flex;
-
 }
 .footlist1 {
   color: var(--white-text-color);
@@ -564,7 +555,6 @@ margin-left: 20px;
   height: 230px;
   margin-left: 100px;
   padding-top: 50px;
-
 }
 
 .circ {
@@ -617,7 +607,6 @@ margin-left: 20px;
   fill: #afb1b8;
 }
 
-
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
@@ -649,21 +638,6 @@ margin-left: 20px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.closebtn {
-  background-color: var(--white-text-color);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border-radius: 50%;
-  border: 1px solid rgba(78, 62, 62, 0.1);
-  fill: #000000;
-}
 
 .card-link {
   position: absolute;
@@ -683,7 +657,7 @@ margin-left: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color:var(--white-text-color);
+  color: var(--white-text-color);
 }
 .description {
   position: relative;
@@ -713,9 +687,25 @@ margin-left: 20px;
 
 .card-link2 {
   padding: 20px 24px;
+}
+.icon-close {
+  fill: var(--logo-text-color);
  
 }
-.icon-close{
-  fill: var(--accent-color);
-  padding-top: 20px;
+.closebtn {
+ 
+  background-color: var(--white-text-color);
+  color: var(--logo-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(78, 62, 62, 0.1);
+  
 }
+
