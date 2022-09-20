@@ -699,7 +699,7 @@ transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-
 
 
 .card-link2 {
-  padding: 20px 24px;
+ 
   border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
