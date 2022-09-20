@@ -692,6 +692,8 @@ margin-left: 20px;
 .card-linki:focus .card-link {
   transform: translateY(0);
 }
+
+
 .card-link2 {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
