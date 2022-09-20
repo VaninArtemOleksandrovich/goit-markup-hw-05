@@ -208,13 +208,13 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  /* display: flex; */
+ 
   align-items: center;
   text-align: center;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
-  margin-bottom: 200px;
+
 }
 
 /* Секція переваги */
@@ -526,29 +526,31 @@ button {
 }
 .project-description {
   color: var(--secondary-text-color);
-
+margin-left: 20px;
   font-size: 16px;
   line-height: 1.88;
-  margin: 0;
+ 
    
 }
 
 .cocialul1 {
   display: flex;
   list-style: none;
-  margin-bottom: 25px;
+  
   padding-top: 10px;
   align-items: inherit;
 }
 .fotlist111 {
   display: flex;
+
 }
 .footlist1 {
   color: var(--white-text-color);
   width: 206px;
-  height: 80px;
+  height: 230px;
   margin-left: 100px;
   padding-top: 50px;
+
 }
 
 .circ {
@@ -648,20 +650,7 @@ button {
   border: 1px solid rgba(78, 62, 62, 0.1);
   fill: #000000;
 }
-/*.a{
-  transform: scaleY();
-  transition: width 250ms cubic-bezier(0.4) ;
-}
- /*.card-link: : {
-  display: inline-block;
-  content: '' ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-}*/
+
 .card-link {
   position: absolute;
   bottom: 0;
@@ -670,7 +659,7 @@ button {
   padding: 64px 24px;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
