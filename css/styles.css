@@ -55,7 +55,7 @@ p {
 .main-nav {
   display: flex;
   margin-right: o auto;
-  transition: fill 1000ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .visually-hidden {
@@ -152,7 +152,7 @@ p {
 }
 .hover-color {
   fill: #757575;
-  transition: color 1000ms var(--timing-function),fill 1000ms var(--timing-function);
+  transition: color 250ms var(--timing-function),fill 250ms var(--timing-function);
 }
 .current {
   color: var(--accent-color);
@@ -424,7 +424,7 @@ p {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-  transition: border-color 1000ms var(--timing-function),fill 1000ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function),fill 250ms var(--timing-function);
 }
 .box-icon:hover,
 .box-icon:focus {
@@ -436,7 +436,7 @@ p {
   fill: var(--accent-color);
 }
 .icon2{
-  transition: fill 1000ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 /* Footer */
 .footer {
@@ -477,8 +477,8 @@ p {
   text-align: center;
   padding: 6px 22px;
 
- transition: background-color 1000ms var(--timing-function),
-    color 1000ms var(--timing-function)}
+ transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function)}
 
 .filter-list {
   display: flex;
@@ -504,7 +504,7 @@ p {
   color: var(--white-text-color);
 }
 .hover-bcg{
-  transition: background-color 1000ms var(--timing-function),fill 1000ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),fill 250ms var(--timing-function);
 }
 .active {
   background-color: var(--accent-color);
@@ -522,8 +522,7 @@ p {
 }
 .project-title {
   color: var(--primary-text-color);
-  padding-top: 10px;
-  padding-left: 20px;
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -532,7 +531,7 @@ p {
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-  transition: background-color 1000ms var(--timing-function),fill 1000ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),fill 250ms var(--timing-function);
 }
 
 .project-list {
@@ -541,7 +540,7 @@ p {
 }
 .project-description {
   color: var(--secondary-text-color);
-  margin-left: 20px;
+
   font-size: 16px;
   line-height: 1.88;
 }
@@ -576,7 +575,7 @@ p {
   width: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 1000ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
     
 }
 .joinup {
@@ -606,7 +605,7 @@ p {
   background-color: var(--accent-color);
 }
 .link12{
-  transition: background-color 1000ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
    
 }
 .social-link {
@@ -617,7 +616,7 @@ p {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition: background-color 1000ms var(--timing-function),fill 1000ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),fill 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -672,7 +671,7 @@ transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   fill:(var(--logo-text-color));
-  transition: transform 1000ms var(--timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .description {
   position: relative;
@@ -681,31 +680,32 @@ transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-
 .card-linki {
   display: block;
   width: 360px;
-  transition: box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
-.card-linki:hover,
-.card-linki:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.card-linki:hover .card-link,
+.card-linki:focus .card-link {
+
   outline: none;
+  transform: translateY(0);
 }
 
-.project-time:hover .card-link,
-.project-time:focus .card-link {
-  transform: translateY(0); 
+.project-time:hover ,
+.project-time:focus  {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
 .card-link2 {
- 
+ padding: 20px 24px;
   border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-top: 1px solid #eeeeee;
     
-      transition: transform 1000ms var(--timing-function);
+      transition: transform 250ms var(--timing-function);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     outline: none;
