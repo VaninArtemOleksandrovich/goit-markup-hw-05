@@ -501,7 +501,21 @@ button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
-
+.description{color: var(--primary-text-color);
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 100 px;
+border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
 .project-title {
   color: var(--primary-text-color);
   padding-top: 10px;
@@ -509,7 +523,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0 0 4px;
+
     
   
 }
@@ -692,16 +706,14 @@ margin-left: 20px;
 .card-linki:focus .card-link {
   transform: translateY(0);
 }
-
+.card-link2:hover .card-link,
+.card-link2:focus .card-link {
+  transform: translateY(0);
+}
 
 .card-link2 {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
+ 
 }
 .icon-close{
   fill: var(--accent-color);
