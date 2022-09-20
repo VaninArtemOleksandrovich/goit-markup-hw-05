@@ -712,3 +712,7 @@ button {
       1px 4px 6px rgba(0, 0, 0, 0.16);
     outline: none;
 }
+.icon-close{
+  fill: var(--accent-color);
+  padding-top: 20px;
+}
