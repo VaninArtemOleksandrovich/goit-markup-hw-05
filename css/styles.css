@@ -177,7 +177,7 @@ p {
   background-position: center;
   background-size: cover;
 }
-button {
+.button {
   cursor: pointer;
   border: none;
   text-align: center;
@@ -658,6 +658,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  fill:(var(--logo-text-color))
 }
 .description {
   position: relative;
